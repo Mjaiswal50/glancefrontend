@@ -11,7 +11,6 @@ import { AuthUtils } from '../utility/auth-utils';
 })
 export class WelcomeComponent  {
   private setverifiedurl = "http://localhost:5000/api/user/verify"
-  email = '';
   otpForm: FormGroup;
   constructor(private httpClient: HttpClient ,private router: Router, private activatedRoute: ActivatedRoute) {
     console.log("i am in Welcome")

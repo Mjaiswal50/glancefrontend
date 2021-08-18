@@ -12,6 +12,7 @@ text-align: center;
 
 button {
 color: white !important;
+border: 1px solid black;
 }
 
 p {
@@ -24,10 +25,31 @@ color: #700b0b;
 }
 
 mat-card {
+  border-radius: 20px;
 max-width: 80% !important;
-box-shadow: rgba(0, 0, 0, 0.2) 0px 0px 20px 10px inset !important;
+background-color:rgb(255, 229, 181);
+
+box-shadow: rgba(0, 0, 0, 0.2) 0px 0px 10px 10px inset !important;
 }
 
 .fullscreeen{
 min-height: 100vh !important;
 }
+::ng-deep .mat-form-field.mat-focused .mat-form-field-label {
+  color: #7c2d19;
+}
+::ng-deep .mat-form-field.mat-focused .mat-form-field-ripple {
+  background-color: #7c2d19;
+}
+::ng-deep .mat-form-field.mat-focused .mat-form-field-required-marker {
+  color: #7c2d19;
+}
+::ng-deep .mat-form-field.mat-focused .mat-input-element {
+  color: #7c2d19;
+}
+::ng-deep .mat-error{
+  color: rgb(153, 0, 0);
+  font-size: 10px;
+}
+
+
