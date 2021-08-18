@@ -1,0 +1,18 @@
+<div>
+<div fxLayout="column" fxLayoutAlign="center center" class="overlay"  class="fullscreeen"  style="  background: linear-gradient(to right bottom, rgb(241, 158, 80), rgb(236, 122, 122));
+">
+  <div fxLayout="column" fxLayoutAlign="center center">
+    <mat-card fxLayout="column" fxLayoutAlign="center center" fxLayoutGap="50px" fxFlex="100%">
+      <div fxLayout="column" fxLayoutAlign="center center">
+        <h1>You haven't Verified your Email yet</h1>
+        <p>Please verify your email which is sent to <strong>{{email}} </strong> before continuing</p>
+      </div>
+    </mat-card>
+  </div>
+  <hr>
+  <form fxLayoutAlign="center center" fxLayout="column"  fxLayoutGap="20px" class="overlay" [formGroup]="this.otpForm ">
+    <input type="text" formControlName="OtpVerify" matInput>
+    <button type="submit" (click)="otpSubmit()" color="primary" mat-button>Submit-Otp</button>
+  </form>
+</div>
+</div>

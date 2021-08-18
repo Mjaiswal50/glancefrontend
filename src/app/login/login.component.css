@@ -1,0 +1,60 @@
+.login-card {
+  min-width: 35rem;
+  min-height: 40rem;
+}
+
+.loginbackground {
+  height: 100%;
+  background: linear-gradient(hsl(27, 68%, 65%), #e7b795, #c26b2d);
+}
+
+.loginbutton {
+  background-color: #bd7935;
+  color: rgb(255, 255, 255);
+  font-family: "STIX Two Text", serif !important;
+  font-weight: 600;
+  font-size: 18px;
+}
+.mat-card {
+  box-shadow: 8px 8px 13px black;
+  border-radius: 13%;
+  background-color: rgb(255, 205, 159);
+}
+.fp {
+  font-family: "Hahmlet", serif;
+  font-weight: 600;
+  font-size: 17px;
+  color: #ac641c;
+}
+.loginheader {
+  font-family: "Tangerine", cursive !important;
+  font-size: 70px;
+  font-weight: 700px;
+  color: #744418;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 30px;
+}
+
+.loginimg {
+  margin-right: auto;
+  margin-left: auto;
+  height: 8rem;
+  width: 8rem;
+  border: solid rgb(0, 0, 0) 7px;
+  border-radius: 50%;
+}
+
+::ng-deep .mat-form-field.mat-focused .mat-form-field-label {
+  color: #bb7d3f;
+}
+::ng-deep .mat-form-field.mat-focused .mat-form-field-ripple {
+  background-color: #bb7d3f;
+}
+::ng-deep .mat-form-field.mat-focused .mat-form-field-required-marker {
+  color: #bb7d3f;
+}
+::ng-deep .mat-form-field.mat-focused .mat-input-element {
+  color: #bb7d3f;
+}
+

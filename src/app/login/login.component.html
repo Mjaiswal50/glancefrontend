@@ -1,0 +1,27 @@
+<div class="loginbackground" fxLayout="column" fxLayoutAlign="center center">
+  <form [formGroup]="this.loginForm">
+    <mat-card fxLayout="column" fxLayoutGap="20px" class="login-card animate__animated animate__fadeInLeft">
+      <br>
+      <div class="loginheader">Please Log In</div>
+      <br>
+      <img src="https://res.cloudinary.com/dtd9fre4r/image/upload/v1628632124/samples/r5_wipykn.svg" class="loginimg">
+      <br>
+      <mat-form-field>
+        <input formControlName="email" autocomplete="off" matInput type="email" placeholder="Email">
+        <mat-error>Valid Email is Required</mat-error>
+      </mat-form-field>
+      <mat-form-field>
+        <input formControlName="password" autocomplete="off" matInput type="password" placeholder="Password">
+        <mat-error> (Minimum 8 Digit) Password is Required</mat-error>
+      </mat-form-field>
+      <br>
+      <a href="#" class="fp">Forgot password ?</a>
+      <div class="mr-3 " fxLayout="column" fxLayoutAlign="space-between end" fxLayoutGap="10px">
+        <button (click)="login()" mat-flat-button type="submit" style="width:30%;" class="loginbutton" color="primary">Login</button>
+        <button mat-flat-button [routerLink]="['./signup']" style="width:30%;" class="loginbutton" color="primary">
+          Signup</button>
+      </div>
+      <br>
+    </mat-card>
+  </form>
+</div>

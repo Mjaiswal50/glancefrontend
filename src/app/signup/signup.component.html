@@ -1,0 +1,39 @@
+<div>
+  <form class="loginbackground" [formGroup]="this.signupForm" fxLayout="column" fxLayoutAlign="center center">
+    <mat-card fxLayout="column" fxLayoutGap="15px" class="login-card animate__animated animate__fadeInRight">
+      <div class="mt-4 loginheader">Please Sign Up</div>
+      <br>
+      <img src="https://res.cloudinary.com/dtd9fre4r/image/upload/v1628632124/samples/r5_wipykn.svg" class="loginimg">
+      <mat-form-field>
+        <input formControlName="firstname" autocomplete="off" matInput type="string" placeholder="First Name">
+                <mat-error>Valid firstname is Required</mat-error>
+      </mat-form-field>
+      <mat-form-field>
+        <input formControlName="lastname" autocomplete="off" matInput type="string" placeholder="Last Name">
+                <mat-error>Valid lastname is Required</mat-error>
+      </mat-form-field>
+      <mat-form-field>
+        <input formControlName="username" autocomplete="off" matInput type="string" placeholder="Username">
+                <mat-error>Valid Username is Required</mat-error>
+      </mat-form-field>
+      <mat-form-field>
+        <input formControlName="email" autocomplete="off" matInput type="email" placeholder="Email">
+                <mat-error>Valid Email is Required</mat-error>
+      </mat-form-field>
+      <mat-form-field>
+        <input formControlName="password" autocomplete="off" matInput type="password" placeholder="Password">
+                <mat-error>Valid Password is Required</mat-error>
+      </mat-form-field>
+      <div class="mb-1" fxLayout="row " fxLayoutAlign="space-between">
+        <a href="#" class="fp">Forgot password ?</a>
+        <div fxLayout="column " fxLayoutAlign="space-between center" fxLayoutGap="20px">
+          <button (click)="signup()" type="submit" mat-flat-button class="mr-5 mb-2 loginbutton" color="primary">
+            Signup</button>
+          <button mat-flat-button  [routerLink]="['']"  class="mr-5 loginbutton"
+            color="primary">Login</button>
+        </div>
+      </div>
+      <br>
+    </mat-card>
+  </form>
+</div>
