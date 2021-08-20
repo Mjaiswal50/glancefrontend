@@ -8,11 +8,14 @@ import { AuthGuard } from './guards/auth.guard';
 import { HomepageComponent } from './homepage/homepage.component';
 import { VerificationincompletedGuard } from './guards/verificationincompleted.guard'
 import { VerificationcompletedGuard } from './guards/verificationcompleted.guard';
+import {ForgetpasswordComponent} from './forgetpassword/forgetpassword.component';
+import { NotfoundComponent } from './notfound/notfound.component';
 const routes: Routes = [
   {
     path: '',
     canActivate: [AnonGuard],
     children: [{ path: 'signup', component: SignupComponent },
+    {path: 'forgetpassword', component: ForgetpasswordComponent},
     { path: '', component: LoginComponent }]
   },
   {
@@ -24,7 +27,8 @@ const routes: Routes = [
     path: '', canActivate: [AuthGuard, VerificationcompletedGuard], children: [{
       path: 'homepage', component: HomepageComponent
     }]
-  }
+  },
+  { path: '**', component: NotfoundComponent }
 ];
 
 @NgModule(

@@ -1,3 +1,17 @@
 
 html, body { height: 100%  }
 body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
+.alertsuccessclass{
+  background-color: rgb(238, 160, 87);
+  color:rgb(29, 23, 25);
+  border:3px solid rgb(34, 16, 5);
+  box-shadow:0 0 20px 10px rgb(207, 114, 61);
+  font-weight: 420;
+}
+.alertfailclass{
+  background-color: rgb(231, 131, 131);
+  color:rgb(94, 11, 11);
+  border:3px solid rgb(58, 3, 3);
+  box-shadow:0 0 20px 10px rgb(216, 58, 18);
+  font-weight: 420;
+}

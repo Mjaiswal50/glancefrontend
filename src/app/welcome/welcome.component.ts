@@ -12,7 +12,7 @@ import { AuthUtils } from '../utility/auth-utils';
 export class WelcomeComponent  {
   private setverifiedurl = "http://localhost:5000/api/user/verify"
   otpForm: FormGroup;
-  constructor(private httpClient: HttpClient ,private router: Router, private activatedRoute: ActivatedRoute) {
+  constructor(private httpClient: HttpClient ,private router: Router) {
     console.log("i am in Welcome")
     this.otpForm = new FormGroup({
       OtpVerify: new FormControl(null, [Validators.required]),

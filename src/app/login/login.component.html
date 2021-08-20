@@ -15,7 +15,7 @@
         <mat-error> (Minimum 8 Digit) Password is Required</mat-error>
       </mat-form-field>
       <br>
-      <a href="#" class="fp">Forgot password ?</a>
+      <a [routerLink]="['./forgetpassword']" class="fp">Forgot password ?</a>
       <div class="mr-3 " fxLayout="column" fxLayoutAlign="space-between end" fxLayoutGap="10px">
         <button (click)="login()" mat-flat-button type="submit" style="width:30%;" class="loginbutton" color="primary">Login</button>
         <button mat-flat-button [routerLink]="['./signup']" style="width:30%;" class="loginbutton" color="primary">

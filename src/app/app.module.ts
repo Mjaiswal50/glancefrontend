@@ -17,6 +17,9 @@ import { AuthGuard } from './guards/auth.guard';
 import { HomepageComponent } from './homepage/homepage.component';
 import { VerificationincompletedGuard } from './guards/verificationincompleted.guard';
 import { VerificationcompletedGuard } from './guards/verificationcompleted.guard';
+import { ForgetpasswordComponent } from './forgetpassword/forgetpassword.component';
+import { MatSnackBarModule } from '@angular/material/snack-bar';
+import { NotfoundComponent } from './notfound/notfound.component';
 
 @NgModule({
   declarations: [
@@ -24,10 +27,13 @@ import { VerificationcompletedGuard } from './guards/verificationcompleted.guard
     LoginComponent,
     SignupComponent,
     WelcomeComponent,
-    HomepageComponent
+    HomepageComponent,
+    ForgetpasswordComponent,
+    NotfoundComponent
   ],
   imports: [
     MatCardModule,
+    MatSnackBarModule,
     BrowserModule,
     AppRoutingModule,
     FlexLayoutModule,
